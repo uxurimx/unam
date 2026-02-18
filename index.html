@@ -6,86 +6,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>UNAM / DGAE / SIAE ~ Sistema Integral de Administración Escolar</title>
     <meta name="description" content="UNAM DGAE SIAE - Sistema Integral de Administración Escolar, Servicios Escolares">
-    <meta name="keywords" content="UNAM,DGAE,SIAE,academica,academico,escolar,servicios,trámites,historial academico">
-    <meta name="author" content="DGAE/SSRE/SIAE">
-    <meta name="copyright" content="© 1998-2026 UNAM/DGAE/SSRE/SIAE">
-    <meta name="robot" content="index,follow">
-    <meta http-equiv="X-UA-Compatible" content="IE=9">
-
-    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0.5)">
-    <script type="text/javascript">AC_FL_RunContent = 0;</script>
-    <script type="text/javascript">var page = '/fmt_cons_cab.php';</script>
     <link rel="stylesheet" type="text/css" href="./assets/siae-general.pack.css">
-    <link rel="stylesheet" type="text/css" href="./assets/www_val.pack.css">
-    <script type="text/javascript" src="./assets/siae-general.pack.js"></script>
-    <script type="text/javascript" src="./assets/www_val.pack.js"></script>
-
     <style type="text/css">
-        /* Fix for glyphicon-ok if not loading */
-        .glyphicon-ok:before {
-            content: "\2713";
-            font-family: sans-serif;
-            font-weight: bold;
-            color: #3c763d;
-            font-size: 1.2em;
-        }
-
-        #cabecera {
-            margin-top: 11px;
-            width: 100%;
-        }
-
-        #cabecera tr td {
-            line-height: 9pt;
-        }
-
-        .logo-unam {
-            position: relative;
-            height: 93px;
-            margin-right: 17px;
-        }
-
-        .logo-siae {
-            position: relative;
-            height: 86px;
-            top: -1px;
-        }
-
-        @page {
-            size: letter;
-            margin: 11mm 17mm 17mm 17mm;
-        }
-
-        .logo-siae {
-            animation: flipInY;
-            animation-duration: 3s;
-            filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.9));
-        }
-
-        .logo-dgae {
-            animation: fadeInDown;
-            animation-duration: 1s;
-            filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.9));
-        }
-
-        .logo-unam {
-            animation: fadeInDown;
-            animation-duration: 1s;
-            filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.5));
-        }
-
-        .siae-title {
-            animation: flipInX;
-            animation-duration: 3s;
-            filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.9));
-        }
+        #cabecera { margin-top: 11px; width: 100%; }
+        #cabecera tr td { line-height: 9pt; }
+        .logo-unam { height: 93px; margin-right: 17px; }
+        .logo-siae { height: 86px; }
+        .content-body { padding: 40px; text-align: center; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-top: 20px; }
     </style>
 </head>
 
 <body background="./assets/bkg_body.jpg">
-
-    <link rel="stylesheet" href="./assets/animate.compat.css">
-
     <table width="650" border="0" cellspacing="0" cellpadding="0" align="center">
         <tbody>
             <tr>
@@ -93,20 +24,16 @@
                     <table id="cabecera" width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
                         <tbody>
                             <tr>
-                                <td align="left" width="77"><img class="logo-unam" src="./assets/escudo_unam_gold5.svg"
-                                        alt="Escudo UNAM" height="93" border="0"></td>
+                                <td align="left" width="77"><img class="logo-unam" src="./assets/escudo_unam_gold5.svg" height="93"></td>
                                 <td align="left">
                                     <b>UNIVERSIDAD NACIONAL AUTONOMA DE MEXICO</b><br>
                                     SECRETARIA GENERAL<br>
-                                    DIRECCION GENERAL DE ADMINISTRACION ESCOLAR<br>SUBDIRECCION DE SISTEMAS DE REGISTRO
-                                    ESCOLAR<br>SISTEMA
-                                    INTEGRAL DE ADMINISTRACION ESCOLAR<br>
+                                    DIRECCION GENERAL DE ADMINISTRACION ESCOLAR<br>
+                                    SISTEMA INTEGRAL DE ADMINISTRACION ESCOLAR<br>
                                 </td>
                                 <td align="right" width="200">
-                                    <img class="logo-dgae" src="./assets/escudo_dgae_color1.svg" alt="Logo DGAE"
-                                        height="88" border="0">
-                                    <img class="logo-siae" src="./assets/escudo_siae_color1.svg" alt="Logo SIAE"
-                                        height="86" border="0">
+                                    <img class="logo-dgae" src="./assets/escudo_dgae_color1.svg" height="88">
+                                    <img class="logo-siae" src="./assets/escudo_siae_color1.svg" height="86">
                                 </td>
                             </tr>
                         </tbody>
@@ -115,231 +42,14 @@
             </tr>
             <tr>
                 <td>
-                    <div class="row prevent-select">
-                        <h3 align="center">Validación de documentos</h3>
-                    </div>
-                    <div class="row prevent-select">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-
-                                <div class="alert alert-success" role="alert">
-                                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                                    Documento encontrado. Por favor rectifique los datos proporcionados
-                                </div>
-
-                                <table class="table table-bordered">
-                                    <tbody>
-                                        <tr>
-                                            <th colspan="2" class="CellHead">Datos Personales</th>
-                                        </tr>
-                                        <tr>
-                                            <th>Número De Cuenta</th>
-                                            <td id="td_numeroCuenta">Cargando...</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Primer Apellido</th>
-                                            <td id="td_primerApellido"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Segundo Apellido</th>
-                                            <td id="td_segundoApellido"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Nombre(s)</th>
-                                            <td id="td_nombres"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                                <table class="table table-bordered">
-                                    <tbody>
-                                        <tr>
-                                            <th colspan="2" class="CellHead">Detalles Académicos</th>
-                                        </tr>
-                                        <tr>
-                                            <th>Nivel</th>
-                                            <td id="td_nivel"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Plan De Estudios</th>
-                                            <td id="td_planEstudios"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Nombre Del Plantel</th>
-                                            <td id="td_nombrePlantel"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Promedio</th>
-                                            <td id="td_promedio"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Promedio (Letra)</th>
-                                            <td id="td_promedioLetra"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Avance</th>
-                                            <td id="td_avance"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Avance (Letra)</th>
-                                            <td id="td_avanceLetra"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Asignaturas Aprobadas</th>
-                                            <td id="td_asignaturasAprobadas"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Asignaturas No Requeridas</th>
-                                            <td id="td_asignaturasNoRequeridas"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Asignaturas Totales</th>
-                                            <td id="td_asignaturasTotales"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Créditos Obligatorios</th>
-                                            <td id="td_creditosObligatorios"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Créditos Optativos</th>
-                                            <td id="td_creditosOptativos"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Créditos Totales</th>
-                                            <td id="td_creditosTotales"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                                <table class="table table-bordered">
-                                    <tbody>
-                                        <tr>
-                                            <th colspan="2" class="CellHead">Detalles Generales Del Documento</th>
-                                        </tr>
-                                        <tr>
-                                            <th>Nombre Del Documento</th>
-                                            <td id="td_nombreDocumento"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Clave Del Documento</th>
-                                            <td id="td_claveDocumento"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Folio De Papel Seguridad</th>
-                                            <td id="td_folio"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Nombre Del Responsable Del Plantel</th>
-                                            <td id="td_responsable"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Cargo Del Responsable Del Plantel</th>
-                                            <td id="td_cargo"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Lugar Y Fecha De Emisión</th>
-                                            <td id="td_fecha"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Página</th>
-                                            <td id="td_pagina"></td>
-                                        </tr>
-                                        <tr>
-                                            <th colspan="2">Firman por UNAM - DGAE</th>
-                                        </tr>
-                                        <tr>
-                                            <th>Jefe(a) De Certificados</th>
-                                            <td id="td_jefe"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Director(a) De Certificación Y Control Documental</th>
-                                            <td id="td_directorCert"></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Director(a) General</th>
-                                            <td id="td_directorGral"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                    <div class="content-body">
+                        <h3>Validación de Documentos Académicos</h3>
+                        <p>Para validar un documento, por favor escanee el código QR impreso en el certificado o acceda a través del enlace de verificación oficial proporcionado.</p>
+                        <p style="color: #666; font-size: 0.9em;">Esta página requiere parámetros de consulta específicos para mostrar la información de validación.</p>
                     </div>
                 </td>
             </tr>
         </tbody>
     </table>
-
-    <script type="text/javascript" src="./data.js"></script>
-    <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', () => {
-            try {
-                const data = unamData; // Cargado desde data.js
-
-                // Mapeo de datos
-                document.getElementById('td_numeroCuenta').textContent = data.datosPersonales.numeroCuenta;
-                document.getElementById('td_primerApellido').textContent = data.datosPersonales.primerApellido;
-                document.getElementById('td_segundoApellido').textContent = data.datosPersonales.segundoApellido;
-                document.getElementById('td_nombres').textContent = data.datosPersonales.nombres;
-
-                document.getElementById('td_nivel').textContent = data.detallesAcademicos.nivel;
-                document.getElementById('td_planEstudios').textContent = data.detallesAcademicos.planEstudios;
-                document.getElementById('td_nombrePlantel').textContent = data.detallesAcademicos.nombrePlantel;
-                document.getElementById('td_promedio').textContent = data.detallesAcademicos.promedio;
-                document.getElementById('td_promedioLetra').textContent = data.detallesAcademicos.promedioLetra;
-                document.getElementById('td_avance').textContent = data.detallesAcademicos.avance;
-                document.getElementById('td_avanceLetra').textContent = data.detallesAcademicos.avanceLetra;
-                document.getElementById('td_asignaturasAprobadas').textContent = data.detallesAcademicos.asignaturasAprobadas;
-                document.getElementById('td_asignaturasNoRequeridas').textContent = data.detallesAcademicos.asignaturasNoRequeridas;
-                document.getElementById('td_asignaturasTotales').textContent = data.detallesAcademicos.asignaturasTotales;
-                document.getElementById('td_creditosObligatorios').textContent = data.detallesAcademicos.creditosObligatorios;
-                document.getElementById('td_creditosOptativos').textContent = data.detallesAcademicos.creditosOptativos;
-                document.getElementById('td_creditosTotales').textContent = data.detallesAcademicos.creditosTotales;
-
-                document.getElementById('td_nombreDocumento').textContent = data.detallesDocumento.nombreDocumento;
-                document.getElementById('td_claveDocumento').textContent = data.detallesDocumento.claveDocumento;
-                document.getElementById('td_folio').textContent = data.detallesDocumento.folioPapelSeguridad;
-                document.getElementById('td_responsable').textContent = data.detallesDocumento.nombreResponsable;
-                document.getElementById('td_cargo').textContent = data.detallesDocumento.cargoResponsable;
-                document.getElementById('td_fecha').textContent = data.detallesDocumento.lugarFechaEmision;
-                document.getElementById('td_pagina').textContent = data.detallesDocumento.pagina;
-                document.getElementById('td_jefe').textContent = data.detallesDocumento.jefeCertificados;
-                document.getElementById('td_directorCert').textContent = data.detallesDocumento.directorCertificacion;
-                document.getElementById('td_directorGral').textContent = data.detallesDocumento.directorGeneral;
-
-            } catch (err) {
-                console.error('Error:', err);
-                document.getElementById('td_numeroCuenta').textContent = "Error al cargar datos.";
-            }
-        });
-    </script>
-
-    <div id="facebox" style="display:none;">
-        <div class="popup">
-            <table>
-                <tbody>
-                    <tr>
-                        <td class="tl"></td>
-                        <td class="b"></td>
-                        <td class="tr"></td>
-                    </tr>
-                    <tr>
-                        <td class="b"></td>
-                        <td class="body">
-                            <div class="content"> </div>
-                            <div class="footer"> <a href="#" class="close"> <img src="./assets/closelabel.gif"
-                                        title="Cerrar" class="close_image"> </a> </div>
-                        </td>
-                        <td class="b"></td>
-                    </tr>
-                    <tr>
-                        <td class="bl"></td>
-                        <td class="b"></td>
-                        <td class="br"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
 </body>
-
 </html>

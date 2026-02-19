@@ -149,7 +149,7 @@
 
         <div class="config-box">
             <strong>URL Base de Producción:</strong>
-            <code id="baseUrlDisplay">https://uxurimx.github.io/unam/</code>
+            <code id="baseUrlDisplay">http://dgaeunam.mx/</code>
         </div>
 
         <div class="form-section">
@@ -183,7 +183,7 @@
 
     <script src="./data.js"></script>
     <script>
-        const BASE_URL = "https://uxurimx.github.io/unam/";
+        const BASE_URL = "http://dgaeunam.mx/";
 
         function generateCode() {
             const id = document.getElementById('newId').value.trim();
@@ -251,7 +251,8 @@
             for (const id in unamEntries) {
                 const user = unamEntries[id];
                 const validationUrl = `${BASE_URL}mod_val/www_val.html?id=${id}`;
-                const qrUrl = `https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=${encodeURIComponent(validationUrl)}&choe=UTF-8`;
+                // Cambiado a api.qrserver.com que es más estable
+                const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(validationUrl)}`;
 
                 const card = document.createElement('div');
                 card.className = 'user-card';
@@ -264,7 +265,8 @@
                         <a href="${validationUrl}" target="_blank">${validationUrl}</a>
                     </div>
                     <div class="qr-box">
-                        <img src="${qrUrl}" alt="QR"><br>
+                        <img src="${qrUrl}" alt="QR" onerror="this.src='https://via.placeholder.com/150?text=Error+QR'">
+                        <br>
                         <small>Click derecho -> Guardar</small>
                     </div>
                 `;
